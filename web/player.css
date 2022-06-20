@@ -1,0 +1,84 @@
+.live-songplayer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 140px;
+  background: #00ff00;
+  z-index: 999;
+  padding: 10px;
+}
+.live-songplayer .song-info {
+  height: calc(100% - 20px);
+  padding: 10px;
+  width: 350px;
+  display: inline-block;
+  float: left;
+  color: white;
+  border-radius: 6px;
+  background: #242424;
+}
+.live-songplayer .song-info .cover {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 7px;
+  float: left;
+  overflow: hidden;
+}
+.live-songplayer .song-info .cover img {
+  width: 100%;
+  height: 100%;
+}
+.live-songplayer .song-info .info {
+  height: 80px;
+  width: 240px;
+  overflow: hidden;
+  padding: 10px;
+  float: left;
+}
+.live-songplayer .song-info .info .name {
+  font-size: 18px;
+  font-weight: 800;
+  width: 240px;
+  overflow: hidden;
+}
+.live-songplayer .song-info .playtime .text {
+  font-size: 12px;
+  color: #969696;
+}
+.live-songplayer .song-info .playtime .baar {
+  position: relative;
+  width: 275px;
+  height: 4px;
+  border-radius: 10px;
+  display: inline-block;
+  background: #b4dbff;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.live-songplayer .song-info .playtime .baar .innerbar {
+  position: absolute;
+  background: #006be6;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.live-songplayer .wplaylist {
+  float: right;
+  border-radius: 6px;
+  background: #242424;
+  height: calc(100% - 20px);
+  padding: 10px;
+  overflow: hidden;
+  margin: 0px 3px;
+  width: 100px;
+}
+.live-songplayer .wplaylist .line .name {
+  text-align: left;
+  overflow: hidden;
+  font-weight: 700;
+}
+.live-songplayer .wplaylist .line .user {
+  text-align: right;
+}

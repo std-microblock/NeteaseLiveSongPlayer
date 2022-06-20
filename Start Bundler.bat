@@ -1,0 +1,1 @@
+nbundle.exe --dir ./ --output ../livesongplayer-bundled.js

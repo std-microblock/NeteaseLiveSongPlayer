@@ -1,0 +1,46 @@
+
+<div class="lsp-switcher on" onclick="lsp_on()">
+    Live SongPlayer（点击切换显示）
+</div>
+
+<div class="lsp-settings-btn" onclick="lsp_settings()">
+    设置
+</div>
+<style>
+    .lsp-switcher.off{
+        background: rgba(255, 0, 0, 0.253);
+    }
+
+    .lsp-switcher.on{
+        background: rgba(30, 255, 0, 0.281);
+    }
+
+    .lsp-switcher{
+        user-select: none;
+        cursor: pointer;
+        padding: 3px;
+        z-index: 999;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin:5px;
+        border-radius: 2px;
+    }
+
+    .lsp-settings-btn{
+        margin:5px;
+        user-select: none;
+        cursor: pointer;
+        padding: 3px;
+        z-index: 999;
+        position: absolute;
+        right: 200px;
+        bottom: 0;
+        background: rgb(0, 119, 255);
+        border-radius: 2px;
+    }
+
+    .invisible{
+        display: none !important;
+    }
+</style>
