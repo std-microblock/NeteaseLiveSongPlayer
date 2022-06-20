@@ -20,7 +20,8 @@ async function switchsong(){
     //    prompt("",`${JSON.stringify(playing)},${JSON.stringify(getPlaying())}`)
         if(playing.name.replace(/\s/g,"")!=getPlaying().name.replace(/\s/g,"")||playing.author.replace(/\s/g,"")!=getPlaying().author.replace(/\s/g,"")){
             let play=playlist.shift()
-            ctl.actionManager.dfR({id:play.songinfo.id,type:"4",action:"play",from:0,href:"",data:{}});
+            let _playsong_=findNativeFunction(ctl.actionManager,[".logSource=",".actionType!==undefined){"])
+            ctl.actionManager[_playsong_]({id:play.songinfo.id,type:"4",action:"play",from:0,href:"",data:{}});
             playing.name=play.songinfo.name.replace(/\s/g,"")
             playing.author=play.songinfo.author.replace(/\s/g,"")
             updatePlaylist()

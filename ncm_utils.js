@@ -80,9 +80,21 @@ function getPlaying() {
     if ($(".u-cover.u-cover-sm img") != null)
         return {
             cover: $(".u-cover.u-cover-sm img").src,
-            name: ($(".bar .title") || $(".bar .title" + endfix)).innerText.split("\n")[0].trim(),
-            author: ($(".bar P.j-title") || $(".bar P.j-title" + endfix)).innerText.split("\n")[0].trim()
+            name: ($(".bar .title" + endfix) || $(".bar .title")).innerText.split("\n")[0].trim(),
+            author: ($(".bar P.j-title" + endfix) || $(".bar P.j-title")).innerText.split("\n")[0].trim()
         };
     else
         return {};
+}
+function findNativeFunction(obj, identifiers) {
+    for (var key in obj) {
+        var flag = true;
+        for (var _i = 0, identifiers_1 = identifiers; _i < identifiers_1.length; _i++) {
+            var identifier = identifiers_1[_i];
+            if (!obj[key].toString().includes(identifier))
+                flag = false;
+        }
+        if (flag)
+            return key;
+    }
 }

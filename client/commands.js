@@ -45,14 +45,15 @@ function updatePlaylist() {
 }
 function switchsong() {
     return __awaiter(this, void 0, void 0, function () {
-        var play;
+        var play, _playsong_;
         return __generator(this, function (_a) {
             // alert("switchsong+"+playlist.length)
             if (playlist.length > 0) {
                 //    prompt("",`${JSON.stringify(playing)},${JSON.stringify(getPlaying())}`)
                 if (playing.name.replace(/\s/g, "") != getPlaying().name.replace(/\s/g, "") || playing.author.replace(/\s/g, "") != getPlaying().author.replace(/\s/g, "")) {
                     play = playlist.shift();
-                    ctl.actionManager.dfR({ id: play.songinfo.id, type: "4", action: "play", from: 0, href: "", data: {} });
+                    _playsong_ = findNativeFunction(ctl.actionManager, [".logSource=", ".actionType!==undefined){"]);
+                    ctl.actionManager[_playsong_]({ id: play.songinfo.id, type: "4", action: "play", from: 0, href: "", data: {} });
                     playing.name = play.songinfo.name.replace(/\s/g, "");
                     playing.author = play.songinfo.author.replace(/\s/g, "");
                     updatePlaylist();
